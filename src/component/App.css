@@ -1,0 +1,81 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(55deg, #57d4e0, rgba(251,24,193,1), rgba(167,15,31,1), rgba(255,0,117,1));
+    background-size: 400% 400%;
+    animation: gradient 10s ease;
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.heart{
+    display: grid;
+    align-self: stretch;
+    justify-self: stretch;
+    animation-name: vMatrix;
+    animation-duration: 6s; 
+    animation-fill-mode: backwards;   
+}
+
+@keyframes vMatrix {
+0% {transform: translateY(-100vh)}
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.happy-container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(30, 3vh);
+    grid-template-rows: repeat(5, 4vh);
+    grid-template-areas: 
+          "a1 . . . a2 . . . a3 . . . a4 a5 a6 a7 a8 . a9 a10 a11 a12 a13 . a14 . . . a15"
+          "a16 . . . a17 . . a18 . a19 . . a20 . . . a21 . a22 . . . a23 . . a24 . a25 ."
+          "a26 a27 a28 a29 a30 . a59 a31 a32 a33 a60 . a34 a35 a36 a37 a38 . a39 a40 a41 a42 a43 . . . a44 . ."
+          "a45 . . . a46 . a47 . . . a48 . a49 . . . . . a50 . . . . . . . a51 . ."
+          "a52 . . . a53 . a54 . . . a55 . a56 . . . . . a57 . . . . . . . a58 . .";
+    
+}
+
+
+.valentine-container {
+    display: grid;
+    margin: auto;
+    margin-top: 5vh;
+    grid-template-columns: repeat(59, 3vh);
+    grid-template-rows: repeat(5, 4vh);
+    grid-template-areas: 
+        "v1 . . . v2 . . . v3 . . . v4 . . . . . v5 v6 v7 v8 v9 . v10 . . . v11 . v12 v13 v14 v15 v16 . v17 v18 v19 v20 v21 . v22 . . . v23 . v24 v25 v26 v27 v28 . v29 v30 v31 v32 v33"
+        "v34 . . . v35 . . v36 . v37 . . v38 . . . . . v39 . . . . . v40 v41 . . v42 . . . v43 . . . . . v44 . . . v45 v46 . . v47 . v48 . . . . . v49 . . . ."
+        ". v50 . v51 . . v52 v53 v54 v55 v56 . v57 . . . . . v58 v59 v60 v61 v62 . v63 . v64 . v65 . . . v66 . . . . . v67 . . . v68 . v69 . v70 . v71 v72 v73 v74 v75 . v76 v77 v78 v79 v80"
+        ". v81 . v82 . . v83 . . . v84 . v85 . . . . . v86 . . . . . v87 . . v88 v89 . . . v90 . . . . . v91 . . . v92 . . v93 v94 . v95 . . . . . . . . . v96"
+        ". . v97 . . . v98 . . . v99 . v100 v101 v102 v103 v104 . v105 v106 v107 v108 v109 . v110 . . . v111 . . . v112 . . . v113 v114 v115 v116 v117 . v118 . . . v119 . v120 v121 v122 v123 v124 . v125 v126 v127 v128 v129";
+}
+
+.day-container {
+    display: grid;
+    margin: auto;
+    margin-top: 5vh;
+    grid-template-columns: repeat(15, 3vh);
+    grid-template-rows: repeat(5, 4vh);
+    grid-template-areas: 
+    "d1 d2 d3 . . . . d4 . . d5 . . . d6"
+    "d7 . . d8 . . d9 . d10 . . d11 . d12 ."
+    "d13 . . d14 . d15 d16 d17 d18 d19 . . d20 . ."
+    "d21 . . d22 . d23 . . . d24 . . d25 . ."
+    "d26 d27 d28 . . d29 . . . d30 . . d31 . .";
+}
