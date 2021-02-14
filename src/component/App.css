@@ -4,7 +4,7 @@ html {
     background: linear-gradient(55deg, #57d4e0, rgba(251,24,193,1), rgba(167,15,31,1), rgba(255,0,117,1));
     background-size: 400% 400%;
     animation: gradient 10s ease;
-    
+    font-size: 62.5%;
 }
 @keyframes gradient {
     0% {
@@ -40,7 +40,7 @@ html {
 .happy-container {
     display: grid;
     margin: auto;
-    grid-template-columns: repeat(30, 3vh);
+    grid-template-columns: repeat(30, 1.5vw);
     grid-template-rows: repeat(5, 4vh);
     grid-template-areas: 
           "a1 . . . a2 . . . a3 . . . a4 a5 a6 a7 a8 . a9 a10 a11 a12 a13 . a14 . . . a15"
@@ -55,8 +55,9 @@ html {
 .valentine-container {
     display: grid;
     margin: auto;
+    max-width: 100vw;
     margin-top: 5vh;
-    grid-template-columns: repeat(59, 3vh);
+    grid-template-columns: repeat(59, 1.5vw);
     grid-template-rows: repeat(5, 4vh);
     grid-template-areas: 
         "v1 . . . v2 . . . v3 . . . v4 . . . . . v5 v6 v7 v8 v9 . v10 . . . v11 . v12 v13 v14 v15 v16 . v17 v18 v19 v20 v21 . v22 . . . v23 . v24 v25 v26 v27 v28 . v29 v30 v31 v32 v33"
@@ -70,7 +71,7 @@ html {
     display: grid;
     margin: auto;
     margin-top: 5vh;
-    grid-template-columns: repeat(15, 3vh);
+    grid-template-columns: repeat(15, 1.5vw);
     grid-template-rows: repeat(5, 4vh);
     grid-template-areas: 
     "d1 d2 d3 . . . . d4 . . d5 . . . d6"
@@ -79,3 +80,12 @@ html {
     "d21 . . d22 . d23 . . . d24 . . d25 . ."
     "d26 d27 d28 . . d29 . . . d30 . . d31 . .";
 }
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { }
+ 
