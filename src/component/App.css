@@ -3,7 +3,7 @@ html {
     height: 100vh;
     background: linear-gradient(55deg, #57d4e0, rgba(251,24,193,1), rgba(167,15,31,1), rgba(255,0,117,1));
     background-size: 400% 400%;
-    animation: gradient 10s ease;
+    animation: gradient 10s ease infinite;
     font-size: 62.5%;
 }
 @keyframes gradient {
